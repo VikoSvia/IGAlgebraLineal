@@ -30,11 +30,6 @@ public class IGVecR4 {
     //}
 
 
-    public double determinante(){
-        //TODO: implementar
-        return 0.0;
-    }
-
     public double angulo(IGVecR4 b){
         //TODO: implementar
         return 0.0;
