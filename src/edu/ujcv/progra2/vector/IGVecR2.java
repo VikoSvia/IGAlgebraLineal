@@ -13,6 +13,7 @@ public class IGVecR2 {
 
     //publico interfase
 
+
     //this es el vector a
     // c.x = a.x + b.x
     // c.y = a.y + b.y
@@ -42,12 +43,6 @@ public class IGVecR2 {
     //public IGVecR2 productoCruz(IGVecR2 b){
 
     //}
-
-
-    public double determinante(){
-        //TODO: implementar
-        return 0.0;
-    }
 
     public double angulo(IGVecR2 b){
         //TODO: implementar
