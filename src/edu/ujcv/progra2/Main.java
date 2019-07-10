@@ -1,6 +1,5 @@
 package edu.ujcv.progra2;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import edu.ujcv.progra2.matriz.IGMatR2;
 import edu.ujcv.progra2.matriz.IGMatR3;
 import edu.ujcv.progra2.matriz.IGMatR4;
@@ -8,7 +7,6 @@ import edu.ujcv.progra2.vector.IGVecR2;
 import edu.ujcv.progra2.vector.IGVecR3;
 import edu.ujcv.progra2.vector.IGVecR4;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -38,7 +36,7 @@ public class Main {
             System.out.print("Opcion: ");
             opcion2 = sc.nextInt();
 
-            if (opcion2 == 1){
+            if (opcion2 == 1) {
                 System.out.println("Seleccione la operacion a realizar:");
                 System.out.println("1) Suma");
                 System.out.println("2) Resta");
@@ -48,29 +46,47 @@ public class Main {
                 System.out.println("6) Magnitud");
                 System.out.print("Opcion: ");
                 opcion3 = sc.nextInt();
+            }
 
-                if (opcion3 == 1);
-                IGVecR2 a = new IGVecR2();
-                System.out.println("Ingrese x1 y y1");
-                a.setX(sc.nextDouble());
-                a.setY(sc.nextDouble());
-                IGVecR2 b = new IGVecR2();
-                System.out.println("Ingrese x2 y y2");
-                b.setX(sc.nextDouble());
-                b.setX(sc.nextDouble());
-                System.out.println("Su resultado es: " + a.suma(b));
+                if (opcion3 == 1) {
+                    IGVecR2 a = new IGVecR2();
+                    System.out.println("Ingrese x1 y y1");
+                    a.setX(sc.nextDouble());
+                    a.setY(sc.nextDouble());
+                    IGVecR2 b = new IGVecR2();
+                    System.out.println("Ingrese x2 y y2");
+                    b.setX(sc.nextDouble());
+                    b.setX(sc.nextDouble());
+                    System.out.println("Su resultado es: " + a.suma(b));
+                }
 
-                if (opcion3 == 1);
-                IGVecR2 a = new IGVecR2();
-                System.out.println("Ingrese x1 y y1");
-                a.setX(sc.nextDouble());
-                a.setY(sc.nextDouble());
-                IGVecR2 b = new IGVecR2();
-                System.out.println("Ingrese x2 y y2");
-                b.setX(sc.nextDouble());
-                b.setX(sc.nextDouble());
-                System.out.println("Su resultado es: " + a.resta(b));
-                
+                if (opcion3 == 2) {
+                    IGVecR2 a = new IGVecR2();
+                    System.out.println("Ingrese x1 y y1");
+                    a.setX(sc.nextDouble());
+                    a.setY(sc.nextDouble());
+                    IGVecR2 b = new IGVecR2();
+                    System.out.println("Ingrese x2 y y2");
+                    b.setX(sc.nextDouble());
+                    b.setX(sc.nextDouble());
+                    System.out.println("Su resultado es: " + a.resta(b));
+                }
+
+                if (opcion3 == 3) {
+                    IGVecR2 a = new IGVecR2();
+                    System.out.println("Ingrese x1 y y1:");
+                    a.setX(sc.nextDouble());
+                    a.setY(sc.nextDouble());
+                    IGVecR2 b = new IGVecR2();
+                    System.out.println("Ingrese x2 y y2:");
+                    b.setX(sc.nextDouble());
+                    b.setX(sc.nextDouble());
+                    System.out.println("Ingrese alph:");
+                    double alpha = sc.nextDouble();
+                    System.out.println("Su resultado es" + a.escalarPorVector(b));
+                }
+
+
             }
         }
 
