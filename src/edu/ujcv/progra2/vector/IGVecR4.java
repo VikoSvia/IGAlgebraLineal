@@ -18,13 +18,21 @@ public class IGVecR4 {
     }
 
     public IGVecR4 resta(IGVecR4 b){
-        //TODO: implementar
+        IGVecR4 retval = new IGVecR4();
+        retval.x = x - b.x;
+        retval.y = y - b.y;
+        retval.z = z - b.z;
+        retval.a = a - b.a;
         return new IGVecR4();
     }
 
     //producto.
     public  IGVecR4 escalarPorVector(double alpha){
-        //TODO: implementar
+        IGVecR4 retval = new IGVecR4();
+        retval.x = (alpha * x);
+        retval.y = (alpha * y);
+        retval.z = (alpha * z);
+        retval.a = (alpha * a);
         return new IGVecR4();
     }
 
