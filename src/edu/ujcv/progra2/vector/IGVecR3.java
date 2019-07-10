@@ -41,14 +41,16 @@ public class IGVecR3 {
 
 
     public IGVecR3 productoCruz(IGVecR3 b){
-
-        return new IGVecR3();
+        double retval;
+        retval = (x * b.x) + (y * b.y) + (z + b.z);
+        return retval;
     }
 
 
     public double angulo(IGVecR3 b){
-        //TODO: implementar
-        return 0.0;
+        double retval;
+        
+        return retval;
     }
 
     public double magnitud(){
