@@ -37,15 +37,18 @@ public class IGVecR4 {
     }
 
     public double productoPunto(IGVecR4 b){
-        //TODO: implementar
-        return 0.0;
+        double retval;
+        retval = (x * b.x) + (y * b.y) + (z * b.z) + (a + b.a);
+        return retval;
     }
 
 
     // no esta definido en R4.!!!!!
-    //public IGVecR4 productoCruz(IGVecR4 b){
-
-    //}
+    public IGVecR4 productoCruz(IGVecR4 b){
+        double retval;
+        retval = (x * b.x) + (y * b.y) + (z + b.z) + (a + b.a);
+        return retval;
+    }
 
 
     public double angulo(IGVecR4 b){
