@@ -17,11 +17,12 @@ public class IGVecR2 {
     }
 
     public IGVecR2 resta(IGVecR2 b){
-        //TODO: implementar
+          IGVecR2 retval = new IGVecR2();
+          retval.x = x - b.x;
+          retval.y = y - b.y;
         return new IGVecR2();
     }
-
-    //producto.
+    
     public  IGVecR2 escalarPorVector(double alpha){
         //TODO: implementar
         return new IGVecR2();
