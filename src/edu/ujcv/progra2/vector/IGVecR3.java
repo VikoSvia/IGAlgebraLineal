@@ -54,7 +54,7 @@ public class IGVecR3 {
     }
 
     public double magnitud(IGVecR3 b){
-        return Math.sqrt(Math.pow(b.x,3)) + Math.pow(b.y,3) + Math.pow(b.y,3);
+        return Math.sqrt(Math.pow(b.x,3) + Math.pow(b.y,3) + Math.pow(b.z,3));
     }
 
 

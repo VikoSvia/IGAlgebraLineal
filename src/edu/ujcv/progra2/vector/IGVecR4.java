@@ -56,7 +56,41 @@ public class IGVecR4 {
         return retval;
     }
 
-    public double magnitud(){
-        return Math.sqrt(productoPunto(this));
+    public double magnitud(IGVecR4 b){
+        return Math.sqrt(Math.pow(b.x,4) + Math.pow(b.y,4) + Math.pow(b.z,4) + Math.pow(b.a,4));
+    }
+
+
+    public double getX(){
+        return x;
+    }
+
+    public void setX(double x){
+        this.x = x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
+
+    public double getZ() {
+        return z;
+    }
+
+    public void setZ(double z) {
+        this.z = z;
+    }
+
+    public double getA() {
+        return a;
+    }
+
+    public void setA(double a) {
+        this.a = a;
     }
 }
+
