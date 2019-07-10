@@ -12,22 +12,21 @@ public class IGVecR2 {
         retval.x = x + b.x;
         retval.y = y + b.y;
         System.out.println(retval);
-
-        return new retval;
+        return retval;
     }
 
     public IGVecR2 resta (IGVecR2 b){
           IGVecR2 retval = new IGVecR2();
           retval.x = x - b.x;
           retval.y = y - b.y;
-        return new retval;
+        return retval;
     }
 
     public  IGVecR2 escalarPorVector (double alpha){
         IGVecR2 retval = new IGVecR2();
         retval.x = (alpha * x);
         retval.y = (alpha * y);
-        return new retval;
+        return retval;
     }
 
     public double productoPunto(IGVecR2 b){

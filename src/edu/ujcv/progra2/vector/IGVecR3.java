@@ -2,10 +2,17 @@ package edu.ujcv.progra2.vector;
 
 public class IGVecR3 {
 
+    private double x;
+    private double y;
+    private double z;
 
-    public IGVecR3 suma(IGVecR3 b){
-        //TODO: implementar
-        return new IGVecR3();
+    public IGVecR3 suma (IGVecR3 b){
+        IGVecR3 retval = new IGVecR3();
+        retval.x = x + b.x;
+        retval.y = y + b.y;
+        retval.z = z + b.z;
+        System.out.println(retval);
+        return retval;
     }
 
     public IGVecR3 resta(IGVecR3 b){
