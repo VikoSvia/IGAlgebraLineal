@@ -2,23 +2,17 @@ package edu.ujcv.progra2.vector;
 
 public class IGVecR2 {
 
-    //privado los datos
-    // un escalar que represente 'x' y 'y' los componentes del vector
 
+    private double x;
+    private double y;
 
-    // publico los constructores por defecto, copia, y conveniencia. recuerden a bob
-
-
-    // publico accesoras y mutadoras
-
-    //publico interfase
-
-
-    //this es el vector a
-    // c.x = a.x + b.x
-    // c.y = a.y + b.y
     public IGVecR2 suma(IGVecR2 b){
-        //TODO: implementar
+
+        IGVecR2 retval = new IGVecR2();
+        retval.x = x + b.x;
+        retval.y = y + b.y;
+        System.out.println(retval);
+
         return new IGVecR2();
     }
 
