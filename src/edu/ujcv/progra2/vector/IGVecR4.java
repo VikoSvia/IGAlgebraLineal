@@ -53,7 +53,7 @@ public class IGVecR4 {
     public double angulo(IGVecR4 b, IGVecR4 a){
         double retval;
         retval = Math.acos(4/ magnitud(a) * magnitud(b));
-        return 0.0;
+        return retval;
     }
 
     public double magnitud(){
