@@ -40,7 +40,7 @@ public class IGVecR3 {
 
 
 
-    public IGVecR3 productoCruz(IGVecR3 b){
+    public double productoCruz(IGVecR3 b){
         double retval;
         retval = (x * b.x) + (y * b.y) + (z + b.z);
         return retval;

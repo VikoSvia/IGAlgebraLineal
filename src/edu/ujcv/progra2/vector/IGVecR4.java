@@ -43,16 +43,16 @@ public class IGVecR4 {
     }
 
 
-    // no esta definido en R4.!!!!!
-    public IGVecR4 productoCruz(IGVecR4 b){
+    public double productoCruz(IGVecR4 b){
         double retval;
         retval = (x * b.x) + (y * b.y) + (z + b.z) + (a + b.a);
         return retval;
     }
 
 
-    public double angulo(IGVecR4 b){
-        //TODO: implementar
+    public double angulo(IGVecR4 b, IGVecR4 a){
+        double retval;
+        retval = Math.acos(4/ magnitud(a) * magnitud(b));
         return 0.0;
     }
 
