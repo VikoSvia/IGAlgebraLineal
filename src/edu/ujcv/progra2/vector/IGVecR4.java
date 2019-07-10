@@ -1,9 +1,19 @@
 package edu.ujcv.progra2.vector;
 
 public class IGVecR4 {
+
+    private double x;
+    private double y;
+    private double z;
+    private double a;
     
     public IGVecR4 suma(IGVecR4 b){
-        //TODO: implementar
+        IGVecR4 retval = new IGVecR4();
+        retval.x = x + b.x;
+        retval.y = y + b.y;
+        retval.z = z + b.z;
+        retval.a = a + b.a;
+        System.out.println(retval);
         return new IGVecR4();
     }
 
