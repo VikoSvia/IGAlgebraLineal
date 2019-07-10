@@ -47,13 +47,16 @@ public class IGVecR3 {
     }
 
 
-    public double angulo(IGVecR3 b){
+    public double angulo(IGVecR3 b, IGVecR3 a){
         double retval;
-        
+        retval = Math.acos(3/ magnitud(a) * magnitud(b));
         return retval;
     }
 
-    public double magnitud(){
-        return Math.sqrt(productoPunto(this));
+    public double magnitud(IGVecR3 b){
+        return Math.sqrt(Math.pow(b.x,3)) + Math.pow(b.y,3) + Math.pow(b.y,3);
     }
+
+
+
 }
