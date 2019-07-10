@@ -1,5 +1,6 @@
 package edu.ujcv.progra2;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import edu.ujcv.progra2.matriz.IGMatR2;
 import edu.ujcv.progra2.matriz.IGMatR3;
 import edu.ujcv.progra2.matriz.IGMatR4;
@@ -20,7 +21,7 @@ public class Main {
         IGMatR2 matriz2 = new IGMatR2();
         IGMatR3 matriz3 = new IGMatR3();
         IGMatR4 matriz4 = new IGMatR4();
-        long opcion1, opcion2, ;
+        long opcion1, opcion2, opcion3, opcion4;
 
         System.out.println("Bienvenido a la Calculadora Suprema de Vectores y Matrices 20000");
         System.out.println("Ingresa si quieres Operaciones Vectoriales o Operaciones Matriciales");
@@ -30,7 +31,47 @@ public class Main {
         opcion1 = sc.nextInt();
 
         if (opcion1 == 1){
-            System.out.println("Seleccione que ");
+            System.out.println("Seleccione la dimension en la que desea trabajar:");
+            System.out.println("1) 2 dimensiones");
+            System.out.println("2) 3 dimensiones");
+            System.out.println("3) 4 dimensiones");
+            System.out.print("Opcion: ");
+            opcion2 = sc.nextInt();
+
+            if (opcion2 == 1){
+                System.out.println("Seleccione la operacion a realizar:");
+                System.out.println("1) Suma");
+                System.out.println("2) Resta");
+                System.out.println("3) Escalar por Vector");
+                System.out.println("4) Producto Punto");
+                System.out.println("5) Angulo");
+                System.out.println("6) Magnitud");
+                System.out.print("Opcion: ");
+                opcion3 = sc.nextInt();
+
+                if (opcion3 == 1);
+                IGVecR2 a = new IGVecR2();
+                System.out.println("Ingrese x1 y y1");
+                a.setX(sc.nextDouble());
+                a.setY(sc.nextDouble());
+                IGVecR2 b = new IGVecR2();
+                System.out.println("Ingrese x2 y y2");
+                b.setX(sc.nextDouble());
+                b.setX(sc.nextDouble());
+                System.out.println("Su resultado es: " + a.suma(b));
+
+                if (opcion3 == 1);
+                IGVecR2 a = new IGVecR2();
+                System.out.println("Ingrese x1 y y1");
+                a.setX(sc.nextDouble());
+                a.setY(sc.nextDouble());
+                IGVecR2 b = new IGVecR2();
+                System.out.println("Ingrese x2 y y2");
+                b.setX(sc.nextDouble());
+                b.setX(sc.nextDouble());
+                System.out.println("Su resultado es: " + a.resta(b));
+                
+            }
         }
 
         if (opcion1 == 2){
