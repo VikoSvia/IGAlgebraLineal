@@ -17,8 +17,7 @@ public class Main {
         IGVecR4 vector4 = new IGVecR4();
         IGMatR2 matriz2 = new IGMatR2();
         IGMatR3 matriz3 = new IGMatR3();
-        IGMatR4 matriz4 = new IGMatR4();
-        long opcion1, opcion2, opcion3, opcion4;
+        long opcion1, opcion2, opcion3 = 0, opcion4;
 
         System.out.println("Bienvenido a la Calculadora Suprema de Vectores y Matrices 20000");
         System.out.println("Ingresa si quieres Operaciones Vectoriales o Operaciones Matriciales");

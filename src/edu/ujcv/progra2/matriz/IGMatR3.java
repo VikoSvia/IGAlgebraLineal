@@ -1,36 +1,22 @@
 package edu.ujcv.progra2.matriz;
 
+import edu.ujcv.progra2.vector.IGVecR3;
+
 public class IGMatR3 {
+    IGVecR3 colum1;
+    IGVecR3 colum2;
+    IGVecR3 colum3;
 
-    void rotateMatrix(int[][] mat)
-    {
-        int N=3;
+    public IGMatR3 rotacionZ (double angulo, IGVecR3 vector){
+        IGMatR3 retval = new IGMatR3();
 
-        for (int x = 0; x < N / 2; x++)
-        {
-            for (int y = x; y < N-x-1; y++)
-            {
+        retval.colum1.setX(this.colum1.getX() * Math.cos(angulo));
+        retval.colum1.setY(this.colum1.getY() * Math.sin(angulo));
+        
 
-                int temp = mat[x][y];
-
-                mat[x][y] = mat[y][N-1-x];
-
-                mat[y][N-1-x] = mat[N-1-x][N-1-y];
-
-                mat[N-1-x][N-1-y] = mat[N-1-y][x];
-
-                mat[N-1-y][x] = temp;
-            }
-        }
+        return retval;
     }
 
-    void printMatrix(int[][] M){
-        for (int i = 0; i < M.length; i++) {
-            for (int j = 0; j < M.length; j++) {
-                System.out.print("[" + M[i][j] + "]");
-            }
-            System.out.println();
-        }
-    }
+
 
 }
