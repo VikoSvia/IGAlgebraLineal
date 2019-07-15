@@ -40,6 +40,21 @@ public class IGMatR3 {
         return retval;
     }
 
+    public IGMatR3 rotacionY (double angulo, IGVecR3 vector){
+        IGMatR3 retval = new IGMatR3();
 
+        retval.colum1.setX(this.colum1.getX() * Math.cos(angulo));
+        retval.colum1.setY(this.colum1.getY() * 0);
+        retval.colum1.setZ(this.colum1.getZ() * -Math.sin(angulo));
+        retval.colum3.setX(this.colum2.getX() * 0);
+        retval.colum3.setY(this.colum2.getY() * 1);
+        retval.colum3.setZ(this.colum2.getZ() * 0);
+        retval.colum2.setX(this.colum2.getX() * Math.sin(angulo));
+        retval.colum2.setY(this.colum2.getY() * 0);
+        retval.colum2.setZ(this.colum2.getZ() * Math.cos(angulo));
+
+
+        return retval;
+    }
 
 }
