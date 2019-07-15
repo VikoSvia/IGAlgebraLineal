@@ -55,7 +55,8 @@ public class Main {
                     System.out.println("Ingrese x2 y y2");
                     b.setX(sc.nextDouble());
                     b.setX(sc.nextDouble());
-                    System.out.println("Su resultado es: " + a.suma(b));
+                    IGVecR2 resul = a.suma(b);
+                    System.out.println("Su resultado es: " +resul.getX()+ " , " +resul.getY());
                 }
 
                 if (opcion3 == 2) {
@@ -67,7 +68,8 @@ public class Main {
                     System.out.println("Ingrese x2 y y2");
                     b.setX(sc.nextDouble());
                     b.setX(sc.nextDouble());
-                    System.out.println("Su resultado es: " + a.resta(b));
+                    IGVecR2 resul = a.resta(b);
+                    System.out.println("Su resultado es: " +resul.getX()+ " , " +resul.getY());
                 }
 
                 if (opcion3 == 3) {
@@ -81,7 +83,18 @@ public class Main {
                     b.setX(sc.nextDouble());
                     System.out.println("Ingrese alph:");
                     double alpha = sc.nextDouble();
-                    System.out.println("Su resultado es" + a.escalarPorVector(b));
+                    IGVecR2 resul = a.escalarPorVector(alpha);
+                    System.out.println("Su resultado es: " +resul.getX()+ " , " +resul.getY());
+                }
+
+                if (opcion3 == 4){
+                    IGVecR2 b = new IGVecR2();
+                    System.out.println("Ingrese x1 y x2");
+                    b.setX(sc.nextDouble());
+                    b.setY(sc.nextDouble());
+                    double b = sc.nextDouble();
+                    System.out.println("Su resultado es: " + b.getX() + " , " + b.getY());
+
                 }
 
 
